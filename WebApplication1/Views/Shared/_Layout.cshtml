@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PocketWord</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PocketWord.styles.css" asp-append-version="true" />
+    <style>
+        .yazii {
+            font-weight: bolder;
+            font-size: 20px;
+            color: aqua;
+            background-color: #202020;
+            border-radius:5px;
+            padding:2px;
+            margin-left:5px;
+        }
+
+            .yazii:hover {
+                color: white;
+                background-color: #0A0A0A;
+            }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+            .footer a {
+                color: #fff;
+            }
+
+                .footer a:hover {
+                    color: #ccc;
+                    text-decoration: none;
+                }
+
+    .drop-yazi{
+
+        color:white;
+        font-weight:bold;
+        font-size:15px;
+
+    }
+    .ayar{
+
+        margin-left:980px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a asp-controller="Home" asp-action="Index">
+            <img src="~/images/main/logo.png" class="d-block w-100" style="position:absolute; height: 62px; max-width:160px;">
+        </a>        
+        <nav style="background-color:#000; margin-left:159px;" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="ayar yazii nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Ana sayfa</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="yazii nav-link" asp-controller="Home" asp-action="Hakkimda">Hakkımda</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="yazii nav-link" asp-controller="Home" asp-action="Gizlilik">Gizlilik ve Güvenlik</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <center>
+            <div class="container">
+             &copy; 2024 -Ramazan - 522 - 11/A - Hızır Reis MTAL- PocketWorld
+            </div>
+        </center>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

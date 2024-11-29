@@ -1,0 +1,365 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\main\\logo.png",
+      "PackagePath": "staticwebassets\\images\\main\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone11\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone11\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone13\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone13\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone13\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone13\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone13\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone13\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone13\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone13\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone14\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone14\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\6.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\apple\\iphone15pro\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\apple\\iphone15pro\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\6.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\mate50pro\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\mate50pro\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\6.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova10se\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova10se\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\6.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\nova11pro\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\nova11pro\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\huawei\\psmarts\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\huawei\\psmarts\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxya35\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxya35\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote10plus\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote10plus\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\3.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\4.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\5.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxynote9\\¨2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxynote9\\¨2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxyzflip\\1.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxyzflip\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxyzflip\\2.png",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxyzflip\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\modelss\\samsung\\galaxyzflip\\properties.txt",
+      "PackagePath": "staticwebassets\\images\\modelss\\samsung\\galaxyzflip\\properties.txt"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\iphone12.png",
+      "PackagePath": "staticwebassets\\images\\phone\\iphone12.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\iphone14.png",
+      "PackagePath": "staticwebassets\\images\\phone\\iphone14.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\iphone15.png",
+      "PackagePath": "staticwebassets\\images\\phone\\iphone15.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\realme1.png",
+      "PackagePath": "staticwebassets\\images\\phone\\realme1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\reeder1.png",
+      "PackagePath": "staticwebassets\\images\\phone\\reeder1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\reeder2.png",
+      "PackagePath": "staticwebassets\\images\\phone\\reeder2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\samsung1.png",
+      "PackagePath": "staticwebassets\\images\\phone\\samsung1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\samsung2.png",
+      "PackagePath": "staticwebassets\\images\\phone\\samsung2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\xiaomi1.png",
+      "PackagePath": "staticwebassets\\images\\phone\\xiaomi1.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\xiaomi2.png",
+      "PackagePath": "staticwebassets\\images\\phone\\xiaomi2.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\xiaomi3.png",
+      "PackagePath": "staticwebassets\\images\\phone\\xiaomi3.png"
+    },
+    {
+      "Id": "C:\\Users\\ramaz\\Documents\\Visual Studio 2022\\Projects\\WebApplication1\\WebApplication1\\wwwroot\\images\\phone\\xiaomi4.png",
+      "PackagePath": "staticwebassets\\images\\phone\\xiaomi4.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

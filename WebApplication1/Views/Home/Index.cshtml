@@ -1,0 +1,1854 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Yana Kutular</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <style>
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+         
+        }
+        h2{
+
+            text-align:center;
+          
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            min-width: 1500px;
+            
+        }
+
+        .box {
+            width: calc(25% - 10px);
+            height: 580px;
+            background-color: #f0f0f0;
+            border: 3px solid #000;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resim {
+            height: 470px;
+            width: 100%; /* Resimlerin container'ı doldurması için */
+            border: 2px solid #000;
+            border-radius: 10px;
+            object-fit: cover; /* Resimlerin oranlarını koruyarak sığması için */
+        }
+
+        .btn {
+            width: 300px;
+            z-index: 1000;
+            position: relative;
+            left: -1170px;
+            top: 29px;
+            margin-top: 5px;
+        }
+        
+        .yazi {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            color: red;
+        }
+
+        .box .container {
+            margin-top: auto;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .foto {
+            max-width: 400px;
+            height: 600px;
+            margin: auto; /* Resmi yatayda ortalamak için */
+            display: block; /* Resmi blok olarak göstermek için */
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 10;
+            opacity: 1;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 250px; /* Butonları 200px aşağıya indirir */
+        }
+
+
+        .carousel-control-prev-icon {
+            color: white;
+            font-size: 24px;
+            line-height: 50px;
+            content: "\2039"; /* Sol ok karakteri */
+        }
+
+        .carousel-control-next-icon {
+            color: white;
+            font-size: 24px;
+            line-height: 50px;
+            content: "\203A"; /* Sağ ok karakteri */
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .satinAlin {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333; /* Yazı rengi */
+            background-color: #ffd700; /* Arkaplan rengi */
+            padding: 10px 20px; /* Yazı etrafındaki iç boşluk */
+            border-radius: 10px; /* Köşelerin yuvarlanma derecesi */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+        }
+
+        .yeni_resim{
+            border: 2px solid #000;
+            height: 450px;
+            border-radius:10px;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <br>
+    <p class="satinAlin">En çok satan</p>
+    <div class="row">
+    <div class="col-md-3">
+        <div class="container">
+            <div class="box">
+                    <img src="/images/modelss/apple/iphone11/2.png" class="yeni_resim d-block w-100">
+                <div class="container mt-3">
+                    <p class="yazi">Iphone 11</p>
+                    <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal1">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="container">
+            <div class="box">
+                    <img src="/images/modelss/huawei/mate50pro/1.png" class="yeni_resim d-block w-100">
+                <div class="container mt-3">
+                        <p class="yazi">Huawei Mate 50 Pro</p>
+                    <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal2">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="container">
+            <div class="box">
+                    <img src="/images/modelss/samsung/galaxya35/1.png" class="yeni_resim d-block w-100">
+                <div  class="container mt-3">
+                    <p class="yazi">Samsung Galaxy A35</p>
+                    <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal3">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="container">
+            <div class="box">
+                    <img src="/images/modelss/apple/iphone13/1.png" class="yeni_resim d-block w-100">
+                <div class="container mt-3">
+                    <p class="yazi">Iphone 13</p>
+                    <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal4">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Iphone 11</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100"  src="~/images/modelss/apple/iphone11/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone11/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone11/4.png" alt="Third slide">
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/LfA8enMsT4c" frameborder="0" allowfullscreen></iframe>
+
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Kozmetik Durum:</strong> B seviye-Çok İyi</li>
+                        <li><strong>Dahili Hafıza:</strong> 64 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3000 - 4000</li>
+                        <li><strong>Garanti Süresi:</strong> 1 Yıl</li>
+                        <li><strong>Garanti Tipi:</strong> İthalatçı Garantili</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,0 inç</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 10 - 15 MP</li>
+                        <li><strong>RAM Kapasitesi:</strong> 4 GB</li>
+                    </ul>
+
+
+
+
+                    
+
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="modal-title">Huawei Mate 50 Pro</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/4.png" alt="Third slide">
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/LxVuD2FLv_8" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Huawei Türkiye Garantili</li>
+                        <li><strong>Dahili Hafıza:</strong> 256 GB</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 5 MP ve altı</li>
+                        <li><strong>Ekran Boyutu:</strong> 4 - 4,5 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 1500 ve altı</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 15 - 20 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6.5'' - 7''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4500-5000 mAh</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>Renk:</strong> Gümüş</li>
+                    </ul>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy A35</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/4.png" alt="Third slide">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/6rXVPHym148" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Ağırlık:</strong> 209 GR</li>
+                        <li><strong>Genişlik:</strong> 161,7 mm</li>
+                        <li><strong>Kalınlık:</strong> 8,2 mm</li>
+                        <li><strong>Yükseklik:</strong> 78 mm</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Suya Dayanıklılık:</strong> IP67</li>
+                        <li><strong>Parmak İzi Okuyucusu:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü (px):</strong> 6.6'' 1080 x 2340 (FHD+) 120Hz 1500 Nit</li>
+                        <li><strong>Ekran:</strong> Renkli Ekran</li>
+                        <li><strong>Ekran:</strong> Dokunmatik</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 120 Hz</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 50 MP+8 MP+5 MP</li>
+                        <li><strong>Kamera Çözünürlüğü Aralığı:</strong> 50 MP</li>
+                        <li><strong>Digital Zoom:</strong> Var</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 13 MP</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 2160p (Ultra HD) 4K</li>
+                        <li><strong>Ağır Çekim Video Kaydı:</strong> Var</li>
+                        <li><strong>Otomatik Odaklama:</strong> Var</li>
+                    </ul>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="myModal4">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Iphone 13</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/3.png" alt="Third slide">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/ppVfCGMHa9M" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 12 MP + 12 MP</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3095</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 4 GB</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 13</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> OLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QLED</li>
+                        <li><strong>Ekran Cinsi:</strong> OLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> FHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Yok</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 10-20 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> Lightning</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>Şarj Girişi:</strong> Lightning</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Yok</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 1080p (Full HD)</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Renk:</strong> Beyaz</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone14/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 14</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal5">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/huawei/nova10se/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Huawei Nova 10SE</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal6">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone15pro/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 15 Pro</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal7">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/samsung/galaxynote9/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Samsung Galaxy Note 9</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal8">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 14</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/HwxFgiRpUFE" frameborder="0" allowfullscreen></iframe>
+
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 12 MP + 12 MP</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3279</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 6 GB</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 14</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Var</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> AMOLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> Dinamik AMOLED</li>
+                        <li><strong>Ekran Cinsi:</strong> FHD Süper AMOLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> FHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 20-40 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> Lightning</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 120 Hz</li>
+                        <li><strong>Radio:</strong> Var</li>
+                        <li><strong>Şarj Girişi:</strong> Lightning</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Yok</li>
+                        <li><strong>CPU Aralık:</strong> 1.5-2.0 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 1080p (Full HD)</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Huawei Nova 10SE</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/B-ItkzBvVp8" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Huawei Türkiye Garantili</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> Nova 10se</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 5 MP ve altı</li>
+                        <li><strong>Ekran Boyutu:</strong> 4 - 4,5 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 1500 ve altı</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 15 - 20 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6.5'' - 7''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 100 - 120 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4500-5000 mAh</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>Renk:</strong> Gümüş</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="myModal7">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 15 Pro</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/4.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/ZJbwh2IrWjE" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                 
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 20 MP ve üstü</li>
+                        <li><strong>Dahili Hafıza:</strong> 256 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3000 - 4000</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 15 Pro</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                        <li><strong>Kablosuz Şarj:</strong> Yok</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> OLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QLED</li>
+                        <li><strong>Ekran Cinsi:</strong> OLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> QHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 60-80 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Var</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 4320p (Ultra HD) 8K</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Renk:</strong> Beyaz</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="myModal8">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy Note 9</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/3.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/4.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/5.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/S2Aorpsrkoo" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Kozmetik Durum:</strong> B seviye-Çok İyi</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 4000 - 5000</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Ekran Boyutu Aralığı:</strong> 6"-6.5"</li>
+                        <li><strong>Garanti Süresi:</strong> 1 Yıl</li>
+                        <li><strong>Garanti Tipi:</strong> Delta Servis Garantili</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Boyutu:</strong> 6 - 8 inç</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 5 - 8 MP</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> QHD+</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> LCD</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Cinsi:</strong> AMOLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QHD+</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>RAM Kapasitesi:</strong> 6 GB</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 2160p (Ultra HD) 4K</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Çift Hat:</strong> Yok</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Yok</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>Şarj Hızı:</strong> 10-20 W</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 5 - 10 MP</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4000-4500 mAh</li>
+                        <li><strong>Kulaklık Girişi:</strong> 3.5 mm</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Var</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p class="satinAlin">Samsung</p>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/samsung/galaxya35/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Samsung Galaxy A35</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal9">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/samsung/galaxynote9/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Samsung Galaxy Note 9</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal10">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/samsung/galaxynote10plus/2.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Samsung Galaxy Note 10 Plus</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal11">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/samsung/galaxyzflip/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Samsung Galaxy Z Flip</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal12">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- Modal 1 -->
+   
+    <div class="modal fade" id="myModal9">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy A35</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxya35/4.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/6rXVPHym148" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Ağırlık:</strong> 209 GR</li>
+                        <li><strong>Genişlik:</strong> 161,7 mm</li>
+                        <li><strong>Kalınlık:</strong> 8,2 mm</li>
+                        <li><strong>Yükseklik:</strong> 78 mm</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Suya Dayanıklılık:</strong> IP67</li>
+                        <li><strong>Parmak İzi Okuyucusu:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü (px):</strong> 6.6'' 1080 x 2340 (FHD+) 120Hz 1500 Nit</li>
+                        <li><strong>Ekran:</strong> Renkli Ekran</li>
+                        <li><strong>Ekran:</strong> Dokunmatik</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 120 Hz</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 50 MP+8 MP+5 MP</li>
+                        <li><strong>Kamera Çözünürlüğü Aralığı:</strong> 50 MP</li>
+                        <li><strong>Digital Zoom:</strong> Var</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 13 MP</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 2160p (Ultra HD) 4K</li>
+                        <li><strong>Ağır Çekim Video Kaydı:</strong> Var</li>
+                        <li><strong>Otomatik Odaklama:</strong> Var</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal10">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy Note 9</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/3.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/4.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote9/5.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/S2Aorpsrkoo" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Kozmetik Durum:</strong> B seviye-Çok İyi</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 4000 - 5000</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Ekran Boyutu Aralığı:</strong> 6"-6.5"</li>
+                        <li><strong>Garanti Süresi:</strong> 1 Yıl</li>
+                        <li><strong>Garanti Tipi:</strong> Delta Servis Garantili</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Boyutu:</strong> 6 - 8 inç</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 5 - 8 MP</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> QHD+</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> LCD</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Cinsi:</strong> AMOLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QHD+</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>RAM Kapasitesi:</strong> 6 GB</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 2160p (Ultra HD) 4K</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Çift Hat:</strong> Yok</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Yok</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>Şarj Hızı:</strong> 10-20 W</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 5 - 10 MP</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4000-4500 mAh</li>
+                        <li><strong>Kulaklık Girişi:</strong> 3.5 mm</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Var</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="myModal11">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy Note 10 Plus</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote10plus/3.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote10plus/4.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxynote10plus/5.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/fk0kuE3VXAg" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Boy (Yükseklik):</strong> 162.33 mm</li>
+                        <li><strong>En (Genişlik):</strong> 77.2 mm</li>
+                        <li><strong>Kalınlık:</strong> 7.9 mm</li>
+                        <li><strong>Ağırlık:</strong> 196 gram</li>
+                        <li><strong>Renk Seçenekleri:</strong> Aura Glow, Aura Black (Siyah), Aura White (Beyaz), Aura Blue (Gri)</li>
+                        <li><strong>Gövde Malzemesi:</strong> Cam ön panel (Corning Gorilla Glass 6), cam arka kapak (Corning Gorilla Glass 6), alüminyum çerçeve</li>
+                        <li><strong>Toza Dayanıklılık:</strong> VAR (Sertifika seviyesi IP6X)</li>
+                        <li><strong>Suya Dayanıklılık:</strong> VAR (Sertifika seviyesi IPX8)</li>
+                        <li><strong>Parmak İzi:</strong> VAR</li>
+                        <li><strong>Ekran Teknolojisi:</strong> Dynamic AMOLED</li>
+                        <li><strong>Ekran Boyutu:</strong> 6.8 inç</li>
+                        <li><strong>En - Boy Oranı:</strong> 19:9</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> 1440 x 3040 piksel</li>
+                        <li><strong>Piksel Yoğunluğu:</strong> 495 ppi</li>
+                        <li><strong>Renk Derinliği:</strong> 16 Milyon Renk, 24 bit</li>
+                        <li><strong>Ekran / Gövde Oranı:</strong> 92.39 %</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Ek Özellikler:</strong> Kapasitif Ekran, Çok noktalı dokunma (Multi Touch), Çizilmeye karşı dayanıklı, Corning Gorilla Glass 6, Dual Edge Display, Always-On Display, HDR10+</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal12">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Samsung Galaxy Z Flip</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxyzflip/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxyzflip/1.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/samsung/galaxyzflip/2.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/MqTX0TDoHXA" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Kozmetik Durum:</strong> B seviye-Çok İyi</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Garanti Süresi:</strong> 1 Yıl</li>
+                        <li><strong>Renk:</strong> Gri</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Boyutu:</strong> 4,5 - 5 inç</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <br>
+    <br>
+      <p class="satinAlin">Huawei</p>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/huawei/mate50pro/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Huawei Mate 50 Pro</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal13">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/huawei/nova10se/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Huawei Nova 10SE</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal14">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/huawei/nova11pro/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Huawei Nova 11 Pro</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal15">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/huawei/psmarts/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Huawei P Smart S</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal16">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal13">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Huawei Mate 50 Pro</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/mate50pro/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/LxVuD2FLv_8" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Huawei Türkiye Garantili</li>
+                        <li><strong>Dahili Hafıza:</strong> 256 GB</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 5 MP ve altı</li>
+                        <li><strong>Ekran Boyutu:</strong> 4 - 4,5 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 1500 ve altı</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 15 - 20 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6.5'' - 7''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4500-5000 mAh</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>Renk:</strong> Gümüş</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal14">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Huawei Nova 10SE</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova10se/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/Md-ETwbXZOY" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Huawei Türkiye Garantili</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> Nova 10se</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 5 MP ve altı</li>
+                        <li><strong>Ekran Boyutu:</strong> 4 - 4,5 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 1500 ve altı</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 15 - 20 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6.5'' - 7''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 100 - 120 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4500-5000 mAh</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>Renk:</strong> Gümüş</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="modal fade" id="myModal15">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Huawei Nova 11 Pro</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova11pro/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova11pro/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/nova11pro/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/qrJFZSxc2IY" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Huawei Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 50 MP + 12 MP + 10 MP</li>
+                        <li><strong>Dahili Hafıza:</strong> 256 GB</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 7,0 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 4000 - 5000</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6.5'' - 7''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 20 - 40 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Kulaklık Girişi:</strong> 3.5 mm</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4500-5000 mAh</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Yok</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal16">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Huawei P Smart S</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/psmarts/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/psmarts/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="/images/modelss/huawei/psmarts/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/3tE-qW19lC8" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Resmi Distribütör Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 20 MP ve üstü</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 4000 - 5000</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 4.5G</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 10 - 20 MP</li>
+                        <li><strong>RAM Kapasitesi:</strong> 2 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6 inç ve üstü</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> FHD+</li>
+                        <li><strong>Ekran Teknolojisi:</strong> FHD+</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 15 - 20 MP</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> OLED</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                        <li><strong>Ekran Cinsi:</strong> OLED</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>İşletim Sistemi:</strong> Android</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Kablosuz Şarj:</strong> Yok</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>Radio:</strong> Var</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 1080p (Full HD)</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>CPU Aralık:</strong> 2.0-2.5 GHz</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 4000-4500 mAh</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Yok</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <br>
+    <br>
+    <p class="satinAlin">Apple</p>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone14/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 14</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal17">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone11/2.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 11</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal18">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone15pro/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 15 Pro</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal19">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <div class="box">
+                    <img src="/images/modelss/apple/iphone13/1.png" class="yeni_resim d-block w-100">
+                    <div class="container mt-3">
+                        <p class="yazi">Iphone 13</p>
+                        <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal20">Daha Fazla Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal17">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 14</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone14/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/HwxFgiRpUFE" frameborder="0" allowfullscreen></iframe>
+
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 12 MP + 12 MP</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3279</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 6 GB</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 14</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Var</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> AMOLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> Dinamik AMOLED</li>
+                        <li><strong>Ekran Cinsi:</strong> FHD Süper AMOLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> FHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 20-40 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> Lightning</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 120 Hz</li>
+                        <li><strong>Radio:</strong> Var</li>
+                        <li><strong>Şarj Girişi:</strong> Lightning</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Yok</li>
+                        <li><strong>CPU Aralık:</strong> 1.5-2.0 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 1080p (Full HD)</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal18">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 11</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone11/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone11/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone11/4.png" alt="Third slide">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/LfA8enMsT4c" frameborder="0" allowfullscreen></iframe>
+
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Kozmetik Durum:</strong> B seviye-Çok İyi</li>
+                        <li><strong>Dahili Hafıza:</strong> 64 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3000 - 4000</li>
+                        <li><strong>Garanti Süresi:</strong> 1 Yıl</li>
+                        <li><strong>Garanti Tipi:</strong> İthalatçı Garantili</li>
+                        <li><strong>Renk:</strong> Siyah</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,0 inç</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 10 - 15 MP</li>
+                        <li><strong>RAM Kapasitesi:</strong> 4 GB</li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="myModal19">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 15 Pro</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/2.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/3.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone15pro/4.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/ZJbwh2IrWjE" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 20 MP ve üstü</li>
+                        <li><strong>Dahili Hafıza:</strong> 256 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 8 GB</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3000 - 4000</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 15 Pro</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 3</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                        <li><strong>Kablosuz Şarj:</strong> Yok</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> OLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QLED</li>
+                        <li><strong>Ekran Cinsi:</strong> OLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> QHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Var</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 40 - 60 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 60-80 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> USB Type-C</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>Şarj Girişi:</strong> USB Type-C</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Var</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 4320p (Ultra HD) 8K</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Renk:</strong> Beyaz</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="myModal20">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Iphone 13</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="foto d-block w-100" src="~/images/modelss/apple/iphone13/3.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <iframe style="position:relative; right:-100px; border-radius:10px;" width="560" height="315" src="https://www.youtube.com/embed/ppVfCGMHa9M" frameborder="0" allowfullscreen></iframe>
+                    <hr>
+                    <h2>Özellikler</h2>
+                    <ul>
+                        <li><strong>Garanti Tipi:</strong> Apple Türkiye Garantili</li>
+                        <li><strong>Kamera Çözünürlüğü:</strong> 12 MP + 12 MP</li>
+                        <li><strong>Dahili Hafıza:</strong> 128 GB</li>
+                        <li><strong>Ekran Boyutu:</strong> 6,1 inç</li>
+                        <li><strong>Pil Gücü (mAh):</strong> 3095</li>
+                        <li><strong>Mobil Bağlantı Hızı:</strong> 5G</li>
+                        <li><strong>RAM Kapasitesi:</strong> 4 GB</li>
+                        <li><strong>Cep Telefonu Modeli:</strong> iPhone 13</li>
+                        <li><strong>Ön Kamera Çözünürlüğü:</strong> 12 MP</li>
+                        <li><strong>Ön Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Arka Kamera Sayısı:</strong> 2</li>
+                        <li><strong>Bağlantılar:</strong> Wi-Fi</li>
+                        <li><strong>Ön Kamera Flaş:</strong> Yok</li>
+                        <li><strong>Kablosuz Şarj:</strong> Var</li>
+                        <li><strong>İşletim Sistemi:</strong> iOS</li>
+                        <li><strong>Garanti Süresi:</strong> 2 Yıl</li>
+                        <li><strong>Ekran Boyut Aralığı:</strong> 6'' - 6.5''</li>
+                        <li><strong>Yüz Tanıma:</strong> Var</li>
+                        <li><strong>Görüntü Teknolojisi:</strong> OLED</li>
+                        <li><strong>Ekran Teknolojisi:</strong> QLED</li>
+                        <li><strong>Ekran Cinsi:</strong> OLED</li>
+                        <li><strong>Ön Kamera Sayısı:</strong> 1</li>
+                        <li><strong>Dokunmatik Ekran:</strong> Var</li>
+                        <li><strong>Ekran Çözünürlüğü:</strong> FHD+</li>
+                        <li><strong>Ana Kamera Flaş:</strong> Var</li>
+                        <li><strong>Çift Hat:</strong> Yok</li>
+                        <li><strong>Bluetooth:</strong> Var</li>
+                        <li><strong>Batarya Kapasitesi Aralığı:</strong> 3000-3500 mAh</li>
+                        <li><strong>Ana Kamera Çözünürlük Aralığı:</strong> 10 - 15 MP</li>
+                        <li><strong>Şarj Hızı:</strong> 10-20 W</li>
+                        <li><strong>Kulaklık Girişi:</strong> Lightning</li>
+                        <li><strong>Parmak İzi Okuyucu:</strong> Var</li>
+                        <li><strong>Ekran Yenileme Hızı:</strong> 60 Hz</li>
+                        <li><strong>Radio:</strong> Yok</li>
+                        <li><strong>Şarj Girişi:</strong> Lightning</li>
+                        <li><strong>NFC:</strong> Var</li>
+                        <li><strong>Arttırılabilir Hafıza (Hafıza Kartı Desteği):</strong> Yok</li>
+                        <li><strong>CPU Aralık:</strong> 2.5-3.2 GHz</li>
+                        <li><strong>Görüntülü Konuşma:</strong> Var</li>
+                        <li><strong>Video Kayıt Çözünürlüğü:</strong> 1080p (Full HD)</li>
+                        <li><strong>Suya/Toza Dayanıklılık:</strong> Var</li>
+                        <li><strong>GPS:</strong> Var</li>
+                        <li><strong>Renk:</strong> Beyaz</li>
+                        <li><strong>Yapay Zeka:</strong> Var</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modals = document.querySelectorAll('.modal');
+
+            modals.forEach(function (modal) {
+                modal.addEventListener('show.bs.modal', function (e) {
+                    document.body.style.overflow = 'hidden';
+                });
+
+                modal.addEventListener('hidden.bs.modal', function (e) {
+                    document.body.style.overflow = 'auto';
+                });
+            });
+        });
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 1000 // Resimlerin geçiş aralığı (milisaniye cinsinden)
+            });
+        });
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+</body>
+</html>

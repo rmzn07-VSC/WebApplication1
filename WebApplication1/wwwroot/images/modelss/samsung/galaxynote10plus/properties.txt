@@ -1,0 +1,31 @@
+Boy (Yükseklik):	162.33 mm
+En (Genişlik):	77.2 mm
+Kalınlık:	7.9 mm
+Ağırlık:	196 gram
+Renk Seçenekleri:	Aura Glow
+Aura Black (Siyah)
+Aura White (Beyaz)
+Aura Blue (Gri)
+Gövde Malzemesi:	Cam ön panel (Corning Gorilla Glass 6), cam arka kapak (Corning Gorilla Glass 6), alüminyum çerçeve
+Toza Dayanıklılık:	VAR 
+Sertifika seviyesi IP6X
+Suya Dayanıklılık:	VAR 
+Sertifika seviyesi IPX8
+Parmak İzi:	VAR 
+
+Ekran Teknolojisi:	Dynamic AMOLED
+Ekran Boyutu:	6.8 inç
+En - Boy Oranı:	19:9
+Ekran Çözünürlüğü:	1440 x 3040 piksel
+Piksel Yoğunluğu:	495 ppi
+Renk Derinliği:	16 Milyon Renk
+24 bit
+Ekran / Gövde Oranı:	92.39 %
+Ekran Yenileme Hızı:	60 Hz
+Ek Özellikler:	Kapasitif Ekran
+Çok noktalı dokunma (Multi Touch)
+Çizilmeye karşı dayanıklı
+Corning Gorilla Glass 6
+Dual Edge Display
+Always-On Display
+HDR10+

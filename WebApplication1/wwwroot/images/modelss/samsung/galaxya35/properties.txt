@@ -1,0 +1,18 @@
+Ağırlık	209 GR
+Genişlik	161,7 mm
+Kalınlık	8,2 mm
+Yükseklik	78 mm
+Yüz Tanıma	Var
+Suya Dayanıklılık	ıp67
+Parmak İzi Okuyucusu	Var
+Ekran Çözünürlüğü (px)	6.6'' 1080 x 2340 (FHD+) 120Hz 1500 Nit
+Ekran	Renkli Ekran
+Ekran	Dokunmatik
+Ekran Yenileme Hızı	120 Hz
+Kamera Çözünürlük	50 MP+8 MP+5 MP
+Kamera Çözünürlük Aralığı	50 mp
+Digital Zoom	Var
+Ön Kamera Çözünürlüğü	13 MP
+Video Kayıt Çözünürlüğü	2160p (Ultra HD) 4K
+Ağır Çekim Video Kaydı	Var
+Otomatik Odaklama	Var
